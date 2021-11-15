@@ -1,0 +1,56 @@
+\documentclass[UTF8,AutoFakeBold,a4paper]{article}%支持粗体
+\usepackage{ctex}
+\usepackage[top=1in,bottom=1in,right=3.18cm,left=3.18cm]{geometry}   % 页边距调整
+\usepackage{graphicx}   % 图片支持
+\usepackage{float}      % 图片强制放置
+\usepackage{indentfirst}% 首行缩进
+\usepackage{titlesec}   % 设置标题
+\usepackage{zhnumber}   % 设置中文section序号
+\usepackage{amsmath,amssymb}    % 数学公式
+\usepackage{enumerate, enumitem}
+\usepackage{float}
+\usepackage[thinlines]{easytable}
+
+\begin{document}
+    \thispagestyle{empty}
+    \vspace{1pt}
+    \begin{center}
+        \includegraphics{figures/zju_note.png}
+    \end{center}
+
+    \begin{center}
+        \includegraphics[width=0.3\linewidth]{figures/zju_fig.png}
+    \end{center}
+
+    \begin{center}
+        \textbf{\zihao{3}本科实验报告（流体力学）}
+    \end{center}
+    \vspace{4cm}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{rl}
+        \zihao{4}
+        姓名：   & \underline{\hspace{9.21cm}} \\
+        \\ %\\ used to widen the height of rows in table.
+        \zihao{4}
+        学院：   & \underline{\hspace{9.21cm}} \\
+        \\
+        \zihao{4}
+        系：    & \underline{\hspace{9.21cm}} \\
+        \\
+        \zihao{4}
+        专业：   & \underline{\hspace{9.21cm}} \\
+        \\
+        \zihao{4}
+        学号：   & \underline{\hspace{9.21cm}} \\
+        \\
+        \zihao{4}
+        指导老师： & \underline{\hspace{9.21cm}}
+        \end{tabular}
+    \end{table} 
+    \vspace{1cm} 
+    \begin{center}
+        \zihao{4}
+        \hspace{1cm}年\hspace{1cm}月\hspace{1cm}日
+    \end{center} 
+\end{document}
