@@ -1,0 +1,47 @@
+\documentclass[UTF8,AutoFakeBold,a4paper]{article}%支持粗体
+\usepackage{ctex}
+\usepackage{soul}
+\usepackage[top=1in,bottom=1in,right=3.18cm,left=3.18cm]{geometry}   % 页边距调整
+\usepackage{graphicx}   % 图片支持
+\usepackage{float}      % 图片强制放置
+\usepackage{indentfirst}% 首行缩进
+\usepackage{titlesec}   % 设置标题
+\usepackage{zhnumber}   % 设置中文section序号
+\usepackage{amsmath,amssymb}    % 数学公式
+\usepackage{enumerate, enumitem}
+\usepackage{float}
+\usepackage[thinlines]{easytable}
+% 设置section和subsection
+\titleformat{\section}[block]{\zihao{4}\bfseries\fangsong}{\zhnum{section}、}{0em}{}[]
+% \titleformat{\section}[block]{\LARGE\bfseries}{Sec.\arabic{section}}{1em}{Hello: }[]
+% \titleformat{\subsection}[block]{\Large\itshape\mdseries}{\arabic{section}.\arabic{subsection}}{1em}{}[]
+% \titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsection}-\alph{subsubsection}}{1em}{}[]
+% \titleformat{\paragraph}[block]{\small\bfseries}{[\arabic{paragraph}]}{1em}{}[]
+% 首行缩进
+\setlength{\parindent}{2em}
+
+\begin{document}
+    \thispagestyle{empty}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=4.3cm]{figures/zju_subnote.png}
+        \textbf{\zihao{1}\bfseries\kaishu 实验报告}
+    \end{figure}
+    \parbox{0.9\linewidth}{
+        \fangsong\zihao{4}\linespread{1.5}
+        课程名称：\underline{\hbox to 0.33\linewidth{\hfill 流体力学 \hfill}}
+        实验类型：\underline{\hbox to 0.32\linewidth{\hfill 验证性 \hfill}} \\ 
+        实验项目名称：\underline{\hbox to 0.75\linewidth{\hfill \hfill}} \\ 
+        学生姓名：\underline{\hbox to 0.2\linewidth{\hfill \hfill}}
+        专业：\underline{\hbox to 0.2\linewidth{\hfill \hfill}}
+        学号：\underline{\hbox to 0.2\linewidth{\hfill \hfill}} \\ 
+        同组学生姓名：	\underline{\hbox to 0.75\linewidth{\hfill \hfill}} \\ 		         		
+        指导老师：\underline{\hbox to 0.83\linewidth{\hfill \hfill}} \\ 
+        实验地点：\underline{\hbox to 0.31\linewidth{\hfill \hfill}}
+        实验日期：\underline{\hbox to 0.05\linewidth{\hfill \hfill}}年
+        \underline{\hbox to 0.05\linewidth{\hfill \hfill}}月
+        \underline{\hbox to 0.05\linewidth{\hfill \hfill}}日
+    }
+    \section{实验目的和要求}
+    \subsection{大数据}
+\end{document}
