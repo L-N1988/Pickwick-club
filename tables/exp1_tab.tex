@@ -1,0 +1,121 @@
+\documentclass[UTF8,AutoFakeBold,a4paper]{article}  %支持粗体
+\usepackage{ctex}   % 支持中文编码
+\usepackage[top=1in,bottom=1in,right=3.18cm,left=3.18cm]{geometry}   % 页边距调整
+\usepackage{graphicx}   % 图片支持
+\usepackage{float}      % 图片强制放置
+\usepackage{indentfirst}% 首行缩进
+\usepackage{titlesec}   % 设置标题
+\usepackage{zhnumber}   % 设置中文section序号
+\usepackage{amsmath,amssymb}    % 数学公式
+\usepackage{enumerate, enumitem}    % 设置序号单元
+\usepackage[thinlines]{easytable}   % 创建简单表格
+\usepackage{lscape} % 设置纸张横向
+\usepackage{multirow}   % 合并表格单元格
+\usepackage{makecell}   % 设置单元格断行
+\usepackage{diagbox}
+
+\begin{document}
+\thispagestyle{empty}
+    \begin{landscape}
+        % begin tab1.
+        \begin{table}[htbp]
+            \caption{流体静压强测量记录及计算表}
+            \label{tab:exp1_tab1}
+            \vspace*{2mm} 
+            \begin{tabular}{|c|c|c|c|cccc|cc|}
+            \hline
+            \multirow{2}{*}{实验条件} &
+            \multirow{2}{*}{次序} &
+            \multirow{2}{*}{\makecell{水箱液面\\$\nabla_0/(10^{-2}\mathrm{m})$}} &
+            \multirow{2}{*}{\makecell{测压管液面\\$\nabla_H/(10^{-2}\mathrm{m})$}} &
+            \multicolumn{4}{c|}{压强水头} &
+            \multicolumn{2}{c|}{测压管水头} \\ \cline{5-10} 
+            &
+            &
+            &
+            &
+            \multicolumn{1}{c|}{\makecell{$ \frac{p_A}{\rho g}=\nabla_H-\nabla_0$\\$/(10^{-2}m)$}} &
+            \multicolumn{1}{c|}{\makecell{$ \frac{p_B}{\rho g}=\nabla_H-\nabla_B$\\$/(10^{-2}m)$}} &
+            \multicolumn{1}{c|}{\makecell{$ \frac{p_C}{\rho g}=\nabla_H-\nabla_C$\\$/(10^{-2}m)$}} &
+            \makecell{$ \frac{p_0}{\rho g}=\nabla_H-\nabla_D$\\$/(10^{-2}m)$} &
+            \multicolumn{1}{c|}{\makecell{$ z_C+\frac{p_C}{\rho g}$\\$/(10^{-2}m)$}} &
+            \makecell{$ z_0+\frac{p_D}{\rho g}$\\$/(10^{-2}m)$} \\ \hline
+            $p_0=0$ &
+            &
+            &
+            &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            &
+            \multicolumn{1}{c|}{} &
+            \\ \hline
+            \multirow{2}{*}{$p_0>0$} &
+            &
+            &
+            &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            &
+            \multicolumn{1}{c|}{} &
+            \\ \cline{2-10} 
+            &
+            &
+            &
+            &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            &
+            \multicolumn{1}{c|}{} &
+            \\ \hline
+            \multirow{2}{*}{\makecell{$p_0<0$\\（其中一次$p_B<0$）}} &
+            &
+            &
+            &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            &
+            \multicolumn{1}{c|}{} &
+            \\ \cline{2-10} 
+            &
+            &
+            &
+            &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            \multicolumn{1}{c|}{} &
+            &
+            \multicolumn{1}{c|}{} &
+            \\ \hline
+            \end{tabular}
+        \end{table}
+    \vspace*{5mm}
+    % begin tab2
+    \begin{table}[H]
+        \caption{油的密度测定记录及计算表}
+        \label{exp1_tab2}
+        \vspace*{2mm} 
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        条件 &
+        次序 &
+        \makecell{水箱液面\\$\nabla_0/(10^{-2}\mathrm{m})$} &
+        \makecell{测压管2液面\\$\nabla_H/(10^{-2}m)$} &
+        \makecell{$h_1=\nabla_H-\nabla_0$\\$/(10^{-2}\mathrm{m})$} &
+        \makecell{$\overline{h_1}$\\$/(10^{-2}m)$} &
+        \makecell{$h_2=\nabla_0-\nabla_H$\\$/10^{-2}\mathrm{m}$} &
+        \makecell{$\overline{h_2}$\\$/(10^{-2}m)$} &
+        $\displaystyle\frac{\rho_0}{\rho_w}=\frac{\overline{h_1}}{\overline{h_1}+\overline{h_2}}$ \\ \hline
+        \multirow{3}{*}{\makecell{$p_0>0$，且U型管中\\水面与油水交界面齐平}} &  &  &  &                       & \multirow{3}{*}{}     & \multirow{3}{*}{\diagbox[dir=SW,height=4.7em,width=10em,trim=r]{}{}} & \multirow{3}{*}{\diagbox[dir=SW,height=4.7em,width=5em,trim=r]{}{}} & \multirow{6}{*}{} \\ \cline{2-5}
+                                                &  &  &  &                       &                       &                       &                       &                   \\ \cline{2-5}
+                                                &  &  &  &                       &                       &                       &                       &                   \\ \cline{1-8}
+        \multirow{3}{*}{\makecell{$p_0<0$，且U型管中\\水面与油面齐平}}    &  &  &  & \multirow{3}{*}{ \diagbox[dir=SW,height=4.7em,width=10em]{}{}} & \multirow{3}{*}{\diagbox[dir=SW,height=4.7em,width=5em,trim=r]{}{}} &                       & \multirow{3}{*}{}     &                   \\ \cline{2-4} \cline{7-7}
+                                                &  &  &  &                       &                       &                       &                       &                   \\ \cline{2-4} \cline{7-7}
+                                                &  &  &  &                       &                       &                       &                       &                   \\ \hline
+        \end{tabular}
+        \end{table}
+    \end{landscape}
+\end{document}
